@@ -1,0 +1,123 @@
+body{
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+p{
+    font-size: 25px;
+    align-items: center;
+    
+}
+header{
+    margin-top: 10px;
+    flex-direction: row;
+    background-color: rgb(228, 216, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+section{
+    margin-bottom: 10px;
+    flex-direction: row ;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    gap: 20px;
+    height: 900px;
+    width: 100%;
+    margin-top: 45px;
+    
+    
+}
+
+
+aside{
+    background-color:  rgb(223, 204, 240);
+    width: 25%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+#eu{
+    margin-top: 10px;
+   
+    text-align: center;
+}
+
+div{
+text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: rgb(69, 13, 89);
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+main{
+     background-color:  rgb(223, 204, 240);
+    width: 65%;
+    height: 100%;
+    margin-top: 10px;
+     text-align: center;
+     border-radius: 10px;
+     padding-top: 50px;
+}
+
+footer{
+     flex-direction: row;
+    background-image: url("imgs/flores.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(228, 216, 239);
+}
+
+
+details[open]{
+    background-color: rgb(197, 157, 198);
+}
+
+/*seletor de atributo com seletor descendente*/
+details[open] p{
+    color: rgb(216, 181, 206);
+}
+
+
+details{
+    background-color:rgba(243, 231, 248, 0.438);
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.171) 2px 2px 4px;
+    /*tamanho limite e centralizado na pagina*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
